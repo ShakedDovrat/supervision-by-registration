@@ -10,7 +10,7 @@ from os import path as osp
 import numpy as np
 import math
 
-from pts_utils import generate_label_map
+from lib.pts_utils import generate_label_map
 from .file_utils import load_file_lists
 from .dataset_utils import pil_loader
 from .dataset_utils import anno_parser

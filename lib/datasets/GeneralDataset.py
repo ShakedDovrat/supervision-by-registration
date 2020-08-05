@@ -10,7 +10,7 @@ from os import path as osp
 import numpy as np
 import math
 
-from pts_utils import generate_label_map
+from lib.pts_utils import generate_label_map
 from .file_utils import load_file_lists
 from .dataset_utils import pil_loader
 from .dataset_utils import anno_parser
@@ -66,7 +66,8 @@ class GeneralDataset(data.Dataset):
 
   def prepare_input(self, image, box):
     meta = Point_Meta(self.NUM_PTS, None, np.array(box), image, self.dataset_name)
-    image = pil_loader( image )
+    # image = pil_loader( image )
+    image = Image.fromarray(image)
     return self._process_(image, meta, -1), meta
 
   def load_data(self, datas, labels, boxes, face_sizes, num_pts, reset):

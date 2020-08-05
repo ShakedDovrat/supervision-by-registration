@@ -7,7 +7,7 @@
 from os import path as osp
 from PIL import Image
 from scipy.ndimage.interpolation import zoom
-from utils.file_utils import load_txt_file
+from lib.utils.file_utils import load_txt_file
 import numpy as np
 import copy, math, pdb
 

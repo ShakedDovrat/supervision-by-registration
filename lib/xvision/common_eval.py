@@ -6,8 +6,8 @@
 #
 import numpy as np
 import pdb, os, time
-from log_utils import print_log
-from datasets.dataset_utils import convert68to49, convert68to51
+from lib.log_utils import print_log
+from lib.datasets.dataset_utils import convert68to49, convert68to51
 from sklearn.metrics import auc
 
 def evaluate_normalized_mean_error(predictions, groundtruth, log, extra_faces):

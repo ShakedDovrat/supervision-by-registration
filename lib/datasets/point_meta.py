@@ -6,7 +6,7 @@
 #
 from PIL import Image
 from scipy.ndimage.interpolation import zoom
-from utils.file_utils import load_txt_file
+from lib.utils.file_utils import load_txt_file
 from .dataset_utils import convert68to49 as _convert68to49
 from .dataset_utils import convert68to51 as _convert68to51
 import numpy as np

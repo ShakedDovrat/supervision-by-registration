@@ -8,7 +8,7 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 import numpy as np
-import datasets
+import lib.datasets
 
 def draw_image_by_points(_image, pts, radius, color, crop, resize):
   if isinstance(_image, str):

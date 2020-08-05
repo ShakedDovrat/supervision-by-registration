@@ -6,7 +6,7 @@
 #
 import torch, copy
 import torch.nn as nn
-import lk
+import lib.lk
 
 class LK(nn.Module):
   def __init__(self, model, lkconfig, points):

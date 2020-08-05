@@ -8,7 +8,7 @@ import os, time
 import numpy as np
 import torch
 import json
-from log_utils import print_log
+from lib.log_utils import print_log
 from collections import OrderedDict
 from scipy import interpolate
 from mpl_toolkits.mplot3d import Axes3D
